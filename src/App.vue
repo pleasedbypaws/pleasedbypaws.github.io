@@ -9,6 +9,9 @@
         </v-img>
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
+        <router-link to="/training">Training</router-link>
+        <router-link to="/prices">Prices</router-link>
+        <router-link to="/faq">Faq</router-link>
         <router-link to="/contact">Contact</router-link>
       </v-app-bar>
     </div>

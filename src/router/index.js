@@ -1,23 +1,42 @@
 import { createWebHistory, createRouter } from "vue-router";
-import PageHeader from "@/components/PageHome";
-import AboutPage from "@/components/PageAbout";
-import PageContact from '@/components/PageContact'
+import PageContact from "@/components/PageContact";
+import PageFaq from "@/components/PageFaq";
+import PagePrices from "@/components/PagePrices";
+import PageAbout from "@/components/PageAbout";
+import PageTraining from "@/components/PageTraining";
+import PageHome from "@/components/PageHome";
 
 const routes = [
     {
         path: "/",
         name: "Home",
-        component: PageHeader,
+        component: PageHome,
     },
     {
         path: "/about",
         name: "About",
+        component: PageAbout,
         component: AboutPage,
     },
     {
         path: "/contact",
         name: "Contact",
         component: PageContact,
+    },
+    {
+        path: "/faq",
+        name: "FAQ",
+        component: PageFaq,
+    },
+    {
+        path: "/prices",
+        name: "Prices",
+        component: PagePrices,
+    },
+    {
+        path: "/training",
+        name: "Training",
+        component: PageTraining,
     }
 ];
 
