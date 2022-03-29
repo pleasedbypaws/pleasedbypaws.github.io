@@ -16,6 +16,7 @@ const routes = [
         path: "/about",
         name: "About",
         component: PageAbout,
+        component: AboutPage,
     },
     {
         path: "/contact",

@@ -1,7 +1,12 @@
 <template>
   <v-app>
     <div>
-      <v-app-bar>
+      <v-app-bar
+      height="200">
+        <v-img src="/logo.png"
+        max-height="150"
+        max-width="150">
+        </v-img>
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/training">Training</router-link>
