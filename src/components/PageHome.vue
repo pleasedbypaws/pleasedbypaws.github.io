@@ -12,7 +12,7 @@
     <div class="two-block">
       <h4>We strive to provide high-quality, one on one time focused on addressing the skills you want to teach your pooch; from sitting down to intense behavior modification for reactivity.</h4>
     </div>
-  </div><br>
+  </div>
   <div class="contact"><a href="PageContact.vue">Contact Us</a></div>
 </template>
 
@@ -39,10 +39,11 @@ export default {
   .contact {
     font-size: 1.4rem;
     text-align: center;
+    margin: 2rem 0;
   }
 
   .contact a {
-    padding: 0px 1rem;
+    padding: 0 1rem;
   }
 
   h3 {
