@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <h2>Private dog training curated just for <em>you</em>.</h2>
+  <div class="wrapper">
+    <h1>Private dog training curated just for <em>you</em>.</h1>
     <p>At Pleased by Paws, we go above and beyond generic group classes to provide a unique training experience tailored to your needs. Our private training takes place where you are: your home, your neighborhood, your park. From there, we create a personalized training plan that takes into account how your dog learns best. And we don’t leave it at that! We offer virtual follow-up sessions to assist with any challenges that may present themselves during the training process. </p>
-    <img src="/logo.png" style="width: 50vw">
+    <img src="/photos/chomskyhome.jpg" height="600px">
   </div>
   <div class="flexy">
     <div class="two-block">Positive training helps build the bond between you and your dog, creating trust and the foundation for a harmonious relationship.</div>
     <div class="two-block">We strive to provide high-quality, one on one time focused on addressing the skills you want to teach your pooch; from sitting down to intense behavior modification for reactivity.</div>
-  </div>
+  </div><br>
+  <div class="contact"><a href="PageContact.vue">Contact Us</a></div>
 </template>
 
 <script>
@@ -17,11 +18,25 @@ export default {
 </script>
 
 <style scoped>
-.flexy {
-  display: flex;
-  justify-content: space-around;
-}
-.two-block {
-  width: 50vw;
-}
+  .flexy {
+    background-color: #dcdcdc;
+    display: flex;
+  }
+  .two-block {
+    width: 50vw;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .contact a {
+    padding: 0px 1rem;
+  }
 </style>

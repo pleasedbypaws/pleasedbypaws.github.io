@@ -1,25 +1,30 @@
 <template>
   <v-app>
-    <div>
-      <v-app-bar
-      height="200">
-        <v-img src="/logo.png"
-        max-height="150"
-        max-width="150">
-        </v-img>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/training">Training</router-link>
-        <router-link to="/prices">Prices</router-link>
-        <router-link to="/faq">Faq</router-link>
-        <router-link to="/contact">Contact</router-link>
-      </v-app-bar>
+      <div class="app">
+        <div class="wrapNav">
+          <v-toolbar color="#fff" height="200px">
+            <v-img src="/logo.png" max-height="150" max-width="150"></v-img>
+            <v-spacer />
+            <router-link to="/">Home</router-link>
+            <router-link to="/about">About</router-link>
+            <router-link to="/training">Training</router-link>
+            <router-link to="/prices">Prices</router-link>
+            <router-link to="/faq">Faq</router-link>
+            <div class="contact"><router-link to="/contact">Contact</router-link></div>
+          </v-toolbar>
+        </div>
+        <div class="wrapContent">
+      <v-main>
+        <v-container fluid>
+          <router-view/>
+        </v-container>
+        <v-footer>
+        </v-footer>
+      </v-main>
     </div>
-    <v-main>
-      <v-container fluid>
-        <router-view/>
-      </v-container>
-    </v-main>
+        <v-toolbar color="#e0dfdf" height="5rem"></v-toolbar>
+        <v-toolbar color="#79222a" height="900px"></v-toolbar>
+      </div>
   </v-app>
 </template>
 
@@ -33,12 +38,59 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+.wrapNav {
+  margin-left: 300px;
+  margin-right: 300px;
+  justify: center;
+}
+
+.wrapNav a {
+  color: #000;
+  text-decoration: none;
+  padding: 0px 1rem;
+}
+
+.wrapNav a:hover, a.router-link-exact-active {
+  text-decoration: underline;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  background-color: #f78278;
+  border-color: #f78278;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 5px;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.wrapContent {
+  position: relative;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+.app {
+  font-family: 'Poppins-Regular', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000;
 }
+
+h1 {
+  text-align: center;
+  font-family: 'Poppins-Regular';
+  padding-bottom: 50px;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 </style>
