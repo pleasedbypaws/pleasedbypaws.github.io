@@ -22,8 +22,14 @@
         </v-footer>
       </v-main>
     </div>
-        <v-toolbar color="#e0dfdf" height="5rem"></v-toolbar>
-        <v-toolbar color="#79222a" height="900px"></v-toolbar>
+        <v-toolbar color="#79222a" height="900px">
+          <div class="footer">
+            <h2>Pleased by Paws, LLC</h2>
+            <h5>Serving the Greater Seattle Area</h5>
+            <h5>phone. (406) 212-1243</h5>
+            <h5>email. info@pleasedbypaws.com</h5>
+          </div>
+        </v-toolbar>
       </div>
   </v-app>
 </template>
@@ -91,6 +97,24 @@ h1 {
 p {
   text-align: center;
   padding-bottom: 50px;
+}
+
+.footer {
+  margin-left: 300px;
+  margin-right: 300px;
+  justify: center;
+}
+
+.footer h2 {
+  color: #f78278;
+  opacity: 0.7;
+  padding: 2rem;
+}
+
+.footer h5 {
+  color: #fff;
+  opacity: 0.7;
+  padding-left: 2rem;
 }
 
 </style>

@@ -5,9 +5,14 @@
     <img src="/photos/chomskyhome.jpg" height="600px">
   </div>
   <div class="flexy">
-    <div class="two-block">Positive training helps build the bond between you and your dog, creating trust and the foundation for a harmonious relationship.</div>
-    <div class="two-block">We strive to provide high-quality, one on one time focused on addressing the skills you want to teach your pooch; from sitting down to intense behavior modification for reactivity.</div>
-  </div><br>
+    <div class="two-block">
+      <h3>Positive training helps build the bond between you and your dog, creating trust and the foundation for a harmonious relationship.</h3>
+    </div>
+
+    <div class="two-block">
+      <h4>We strive to provide high-quality, one on one time focused on addressing the skills you want to teach your pooch; from sitting down to intense behavior modification for reactivity.</h4>
+    </div>
+  </div>
   <div class="contact"><a href="PageContact.vue">Contact Us</a></div>
 </template>
 
@@ -19,7 +24,6 @@ export default {
 
 <style scoped>
   .flexy {
-    background-color: #dcdcdc;
     display: flex;
   }
   .two-block {
@@ -29,14 +33,27 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
   }
 
   .contact {
-    margin-top: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
+    margin: 2rem 0;
   }
 
   .contact a {
-    padding: 0px 1rem;
+    padding: 0 1rem;
+  }
+
+  h3 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  h4 {
+    text-align: center;
+    padding: 1rem;
+    font-weight: normal;
   }
 </style>
