@@ -16,7 +16,7 @@
     </div>
 
     <div class="contact">
-      <a href="PageContact.vue">Contact Us</a>
+      <router-link to="/contact">Contact</router-link>
     </div>
 
   </div>
@@ -50,6 +50,7 @@ export default {
     position: relative;
     margin-left: 600px;
     margin-right: 600px;
+    margin-top: 5rem;
   }
 
   img {
