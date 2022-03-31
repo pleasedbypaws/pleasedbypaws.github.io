@@ -2,7 +2,7 @@
   <v-app>
       <div class="app">
         <div class="wrapNav">
-          <v-toolbar color="#fff" height="200px">
+          <v-toolbar color="#fff" height="20%">
             <v-img src="/logo.png" max-height="150" max-width="150"></v-img>
             <v-spacer />
             <router-link to="/">Home</router-link>
@@ -13,13 +13,10 @@
             <div class="contact"><router-link to="/contact">Contact</router-link></div>
           </v-toolbar>
         </div>
-        <div class="wrapContent">
       <v-main>
         <v-container fluid>
           <router-view/>
         </v-container>
-        <v-footer>
-        </v-footer>
       </v-main>
     </div>
         <v-toolbar color="#79222a" height="900px">
@@ -30,7 +27,6 @@
             <h5>email. info@pleasedbypaws.com</h5>
           </div>
         </v-toolbar>
-      </div>
   </v-app>
 </template>
 
@@ -45,8 +41,8 @@ export default {
 
 <style>
 .wrapNav {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 20%;
+  margin-right: 20%;
   justify: center;
 }
 
@@ -76,11 +72,6 @@ export default {
   opacity: 0.7;
 }
 
-.wrapContent {
-  position: relative;
-  margin-left: 600px;
-  margin-right: 600px;
-}
 .app {
   font-family: 'Poppins-Regular', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -94,15 +85,9 @@ h1 {
   padding-bottom: 50px;
 }
 
-p {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
 .footer {
   margin-left: 300px;
   margin-right: 300px;
-  justify: center;
 }
 
 .footer h2 {
