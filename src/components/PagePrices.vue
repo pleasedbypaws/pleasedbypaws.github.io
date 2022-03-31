@@ -63,6 +63,7 @@ export default {
 }
 .two-block {
   width: 50vw;
+  margin-top: 5rem;
 }
 
 .wrapContent {

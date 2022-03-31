@@ -3,7 +3,7 @@
       <div class="app">
         <div class="wrapNav">
           <v-toolbar color="#fff" height="20%">
-            <v-img src="/logo.png" max-height="150" max-width="150"></v-img>
+            <v-img src="/logo.png" height="150" width="150"></v-img>
             <v-spacer />
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
