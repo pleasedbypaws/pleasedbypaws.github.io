@@ -32,9 +32,22 @@
 
 <script>
 
+import PageAbout from '@/components/PageAbout'
+import PageContact from '@/components/PageContact'
+import PageFaq from '@/components/PageFaq'
+import PageHome from '@/components/PageHome'
+import PagePrices from '@/components/PagePrices'
+import PageTraining from '@/components/PageTraining'
+
 export default {
   name: 'App',
   components: {
+    PageAbout,
+    PageContact,
+    PageFaq,
+    PageHome,
+    PagePrices,
+    PageTraining
   }
 }
 </script>
