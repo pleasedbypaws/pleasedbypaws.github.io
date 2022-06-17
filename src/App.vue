@@ -77,6 +77,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
+  width: min(100% - 2rem, 100rem);
+  margin-inline: auto;
 }
 
 h1 {
